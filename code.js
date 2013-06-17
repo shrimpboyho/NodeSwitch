@@ -36,11 +36,7 @@ var server = http.createServer();
 
 server.on('request',function(request,response){
 
-    
-    // Begin routing
-    
-    routingSystem(request.url.toString(),request,response);
-    
+    // TODO : WORK ON UPLOAD STUFF
     
     request.on('data',function(chunk){
         
@@ -52,14 +48,18 @@ server.on('request',function(request,response){
     
     request.on('end',function(){      
         
-        // End the response
+        // End the response if the file uploaded was less that 
     
-        response.end();
+       
            
     });
     
-
     
+    // Begin routing
+    
+    routingSystem('.' + request.url.toString(),request,response);
+    
+ 
 });
 
 
@@ -80,8 +80,8 @@ function routingSystem(requestURL, requestInner, responseInner){
     
     // if a default url is specified load index.html
     
-    if (requestURL == '/'){
-    	requestURL = 'index.html';
+    if (requestURL == './'){
+    	requestURL = './index.html';
     }
     
     // Get the file extension

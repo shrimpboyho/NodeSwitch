@@ -1,1 +1,2 @@
 {"ts":1371504492432,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"alert(\"Javascript loaded\");"]],"start1":0,"start2":0,"length1":0,"length2":27}]],"length":27}
+{"contributors":[],"silentsave":false,"ts":1371507870583,"patch":[[{"diffs":[[0,"oaded\");"],[1,"\n\n$('button').click(function(){\n    \n    alert(\"button clicked!\");\n    \n});"]],"start1":19,"start2":19,"length1":8,"length2":83}]],"length":102,"saved":false}
