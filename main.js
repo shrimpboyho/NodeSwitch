@@ -74,3 +74,7 @@ server.on('request',function(request,response){
 // Open the server for listening
 
 server.listen(process.env.PORT);
+
+// Log to the console
+
+console.log("Server is listening on ports");

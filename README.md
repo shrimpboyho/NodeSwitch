@@ -1,4 +1,7 @@
 NodeSwitch
 ==========
 
-A Simple Generic Node.js Server
+A simple generic node.js server right out of the box.
+
+
+

@@ -1,0 +1,2 @@
+{"ts":1371502889931,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"NodeSwitch\n==========\n\nA Simple Generic Node.js Server\n"]],"start1":0,"start2":0,"length1":0,"length2":55}]],"length":55}
+{"contributors":[],"silentsave":false,"ts":1371502909581,"patch":[[{"diffs":[[0,"\n\nA "],[-1,"S"],[1,"s"],[0,"imple "],[-1,"G"],[1,"g"],[0,"eneric "],[-1,"N"],[1,"n"],[0,"ode.js "],[-1,"S"],[1,"s"],[0,"erver"],[1," right out of the box.\n\n\n"],[0,"\n"]],"start1":21,"start2":21,"length1":34,"length2":59}]],"length":80,"saved":false}
