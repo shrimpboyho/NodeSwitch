@@ -40,6 +40,8 @@ var server = http.createServer();
 
 server.on('request',function(request,response){
     
+    console.log(request.toString());
+    
     // Write initial stuff to the client
     
     response.writeHead(200, {'Content-Type': 'text/html'});
