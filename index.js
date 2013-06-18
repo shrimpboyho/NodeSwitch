@@ -1,4 +1,6 @@
-alert("Javascript loaded");
+// Client side scripting
+
+console.log("Website loaded");
 
 $('button').click(function(){
     
