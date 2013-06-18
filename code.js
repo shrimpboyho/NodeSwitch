@@ -70,7 +70,7 @@ server.on('request',function(request,response){
 
 // Open the server for listening
 
-server.listen(process.env.PORT);
+server.listen(8080);
 
 // Log to the console
 
