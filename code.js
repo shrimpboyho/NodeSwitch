@@ -123,12 +123,12 @@ function routingSystem(requestURL, requestInner, responseInner){
             // End the response
             
             responseInner.end();
-    		
-    	}
-    	else {
-    		responseInner.writeHead(404);
-    		responseInner.end();
-    	}
+	
+        }
+        else {
+            responseInner.writeHead(404);
+            responseInner.end();
+        }
     
     });
     
