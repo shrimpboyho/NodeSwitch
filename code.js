@@ -35,22 +35,27 @@ var server = http.createServer();
 // Server request event
 
 server.on('request',function(request,response){
+    
+    // Create data variable
+    
+    var dataBlock = '';
 
     // TODO : WORK ON UPLOAD STUFF
     
     request.on('data',function(chunk){
         
-        console.log(chunk.toString());
+        dataBlock = dataBlock + chunk;
+        console.log("Recieved Chunk: "+ chunk.toString());
         
     });
     
     // When there is no more data left to read
     
-    request.on('end',function(){      
+    request.on('end',function(err){      
         
         // End the response if the file uploaded was less that 
-    
-       
+        
+        console.log("Got a full chunk: %j", JSON.parse(JSON.stringify(dataBlock)));
            
     });
     
@@ -81,7 +86,7 @@ function routingSystem(requestURL, requestInner, responseInner){
     // if a default url is specified load index.html
     
     if (requestURL == './'){
-    	requestURL = './index.html';
+        requestURL = './index.html';
     }
     
     // Get the file extension
@@ -105,8 +110,8 @@ function routingSystem(requestURL, requestInner, responseInner){
     
     fileManager.exists(requestURL, function(exists) {
         
-    	if (exists) {
-    		
+        if (exists) {
+	
             // Read the file
             
             var filetoserve = fileManager.readFileSync(requestURL);
