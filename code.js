@@ -83,7 +83,7 @@ console.log("Server is listening on ports");
 
 function routingSystem(requestURL, requestInner, responseInner){
       
-    // TODO: IMPLEMENT ROUTING SYSTEM HERE
+    apiRoutes(requestURL, requestInner, responseInner);
     
     // if a default url is specified load index.html
     
@@ -139,4 +139,19 @@ function routingSystem(requestURL, requestInner, responseInner){
     
     });
     
+}
+
+/* API ROUTING SYSTEM */
+
+function apiRoutes(requestURL, requestInner, responseInner){
+
+    var apiRegex = /^\.\/api.*/;
+    
+    if(apiRegex.test(requestURL)){
+
+
+        responseInner.write("This is the API");
+
+    }
+
 }
