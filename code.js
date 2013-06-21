@@ -72,8 +72,8 @@ server.on('request',function(request,response){
 
 var port = process.env.PORT || 3000;
 
-//server.listen(port);
-server.listen(8080);
+server.listen(port);
+//server.listen(8080);
 
 // Log to the console
 
