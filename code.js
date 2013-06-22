@@ -83,6 +83,9 @@ console.log("Server is listening on ports");
 
 function routingSystem(requestURL, requestInner, responseInner){
       
+	
+    // Check the api routes before loading any files 	
+	
     apiRoutes(requestURL, requestInner, responseInner);
     
     // if a default url is specified load index.html
@@ -150,7 +153,7 @@ function apiRoutes(requestURL, requestInner, responseInner){
     if(apiRegex.test(requestURL)){
 
 
-        responseInner.write("This is the API");
+        responseInner.write("This is the API. Specify more parameters in the URL");
         responseInner.end();
         
     }
